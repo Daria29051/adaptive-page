@@ -301,13 +301,14 @@ border-radius: 4px;
         grid-template-areas: 
         "header main"
         "header main"
-        "header main";
+        "room__title room";
     }
 
     .main {
         display: flex;
         flex-direction: column;
-        background-color: #FBF8F5;    
+        background-color: #FBF8F5;  
+        margin-bottom: 15vh;  
     }
 
     .main__img {
@@ -385,6 +386,44 @@ border-radius: 4px;
             align-items: flex-start;
             justify-content: flex-start;
              }
+
+             .room__title {
+                grid-area: room__title;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2em;
+                line-height: 54px;
+             }
+
+             .room {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                "room_living-room room_home-office"
+                "room_bedroom room_dining-room" ;
+                justify-items: center;
+                gap: 10vh;
+                grid-area: room;
+            }
+
+            .room_living-room {
+                grid-area: room_living-room ;
+                
+            }
+
+            .room_bedroom {
+                grid-area: room_bedroom ;
+            }
+
+            .room_home-office {
+                grid-area: room_home-office ;
+            }
+
+            .room_dining-room {
+                grid-area: room_dining-room  ;
+            }
 }
 
 
