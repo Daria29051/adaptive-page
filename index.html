@@ -4,88 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feather</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
+
   <body>
     <div class="wrapper">
-    <header class="header header--mobile">
-      <nav class="header__nav-1">
-        <a class="header__menu">Furniture</a>
-        <a class="header__menu">Why Feather</a>
-        <a class="header__menu">Feather for Business</a>
-      </nav>
+      <header class="header">
+        <nav class="header__nav-1">
+          <a class="header__menu">Furniture</a>
+          <a class="header__menu">Why Feather</a>
+          <a class="header__menu">Feather for Business</a>
+        </nav>
 
-      <nav class="header__nav-2">
-        <a class="header__menu"
-          ><img src="assets/images/logo.png" alt="logo"
-        /></a>
-      </nav>
+        <nav class="header__nav-2">
+          <a class="header__menu"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+        </nav>
 
-      <nav class="header__nav-3">
-        <a class="header__menu">Check if We Deliver</a>
-        <a class="header__menu">Search</a>
-        <a class="header__menu">Account</a>
-        <a class="header__menu">
-          <img src="assets/images/basket.png" alt="basket"
-        /></a>
-      </nav>
-    </header>
+        <nav class="header__nav-3">
+          <a class="header__menu">Check if We Deliver</a>
+          <a class="header__menu">Search</a>
+          <a class="header__menu">Account</a>
+          <a class="header__menu">
+            <img src="assets/images/basket.png" alt="basket"
+          /></a>
+        </nav>
+      </header>
 
-    <main class="main">
-      <h1 class="main__title">Curated and Convenient</h1>
-      <p class="main__para">
-        We've built our offerings on the principle that everyone deserves
-        high-quality design without the high cost. We offer elevated rental
-        inventory, to transform your space. Reuse and recycle - we make the
-        decision as light as a “feather”
-      </p>
-      <form>
-        <button class="main__button">Get Started</button>
-      </form>
+      <main class="main">
+        <h1 class="main__title">Curated and Convenient</h1>
+        <p class="main__para">
+          We've built our offerings on the principle that everyone deserves
+          high-quality design without the high cost. We offer elevated rental
+          inventory, to transform your space. Reuse and recycle - we make the
+          decision as light as a “feather”
+        </p>
+        <form>
+          <button class="main__button">Get Started</button>
+        </form>
 
-      <div class="main__img">
-        <img
-          src="assets/images/main-img.png"
-          alt="a dog in the
-      living-room"
-        />
-      </div>
-    </main>
+        <picture class="main__img">
+          <source
+            srcset="assets/images/main-img-mobile-320px.png"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="assets/images/main-img-mobile-768px.png"
+            media="(max-width: 1024px)"
+          />
+          <source srcset="assets/images/main-img.png" />
+          <img
+            src="assets/images/main-img.png"
+            alt="a dog in the
+         living-room"
+          />
+        </picture>
+      </main>
 
-    <p class="room__title">Shop by Room</p>
+      <p class="room__title">Shop by Room</p>
 
-    <div class="room">
-      <div class="room__living-room">
-        <img
-          class="room__img"
-          src="assets/images/living-room.png"
-          alt="living-room"
-        />
-        <div class="room__text">Living Room</div>
-      </div>
+      <div class="room">
+        <div class="room__living-room">
+          <img
+            class="room__img"
+            src="assets/images/living-room.png"
+            alt="living-room"
+          />
+          <p class="room__text">Living Room</p>
+        </div>
 
-      <div class="room__bedroom">
-        <img class="room__img" src="assets/images/bedroom.png" alt="bedroom" />
-        <div class="room__text">Bedroom</div>
-      </div>
+        <div class="room__bedroom">
+          <img
+            class="room__img"
+            src="assets/images/bedroom.png"
+            alt="bedroom"
+          />
+          <p class="room__text">Bedroom</p>
+        </div>
 
-      <div class="room__home-office">
-        <img
-          class="room__img"
-          src="assets/images/home-office.png"
-          alt="home-office"
-        />
-        <div class="room__text">Home Office</div>
-      </div>
+        <div class="room__home-office">
+          <img
+            class="room__img"
+            src="assets/images/home-office.png"
+            alt="home-office"
+          />
+          <p class="room__text">Home Office</p>
+        </div>
 
-      <div class="room__dining-room">
-        <img
-          class="room__img"
-          src="assets/images/dining room.png"
-          alt="dining-room"
-        />
-        <div class="room__text">Dining Room</div>
+        <div class="room__dining-room">
+          <img
+            class="room__img"
+            src="assets/images/dining-room.png"
+            alt="dining-room"
+          />
+          <p class="room__text">Dining Room</p>
+        </div>
       </div>
     </div>
   </body>
